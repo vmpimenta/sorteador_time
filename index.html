@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador HEMAN</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title"></h1>
+        </header>
+
+        <section class="input-section">
+            <h2 class="section-title">Quais jogadores foram escalados? </h2>
+            <div class="input-wrapper">
+                <input type="text" id="jogador" class="input-name" placeholder="Digite o nome do jogador">
+                <button class="button-add" onclick="adicionarJogador()">Adicionar</button>
+            </div>
+
+            <ol id="listaNomes" class="name-list" aria-labelledby="listaNomes" role="list"></ol>
+
+            <div class="container-resultados">
+            <ul id="timeAzul" class="result-list" aria-live="polite"></ul>
+            <ul id="timeVermelho" class="result-list" aria-live="polite"></ul>
+            </div>
+        
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearTime()" aria-label="Sortear Jogador">
+                <img src="assets/play_circle_outline.png" alt="Ícone para sortear">Sortear</button>
+                <button class="button-draw" onclick="limparLista()" aria-label="Sortear Jogador">
+                <img src="assets/x.png" alt="Ícone para sortear" class="imagem_x">Limpar</button>
+            </div>
+        </section>
+    </main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
