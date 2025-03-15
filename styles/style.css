@@ -16,6 +16,7 @@
 }
 
 body {
+    box-sizing: border-box;
     height: 100vh;
     background-image: url("../assets/herman.png");
     display: flex;
@@ -24,6 +25,7 @@ body {
 }
 
 .main-content {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,6 +43,7 @@ body {
 
 /* Seção de entrada */
 .input-section {
+    box-sizing: border-box;
     flex: 60%;
     background-color: #000957;
     background-position: center;
@@ -90,6 +93,7 @@ body {
 }
 
 .button-container {
+    box-sizing: border-box;
     width: 300px;
     justify-content: center;
     display: flex;
@@ -110,6 +114,7 @@ body {
 
 /* Estilos de botão */
 button {
+    box-sizing: border-box;
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -131,6 +136,7 @@ button {
 
 /* Listas */
 ol {
+    box-sizing: border-box;
     color: var(--color-button);
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -139,6 +145,7 @@ ol {
 }
 
 ul {
+    box-sizing: border-box;
     list-style-type: none;
     color: var(--color-button);
     font-family: "Inter", sans-serif;
@@ -147,6 +154,7 @@ ul {
 }
 
 .result-list {
+    box-sizing: border-box;
     margin-top: 15px;
     color: #05DF05;
     font-size: 22px;
@@ -155,13 +163,15 @@ ul {
 }
 
 .container-resultados {
+    box-sizing: border-box;
     justify-content: space-between;
     display: flex;
-    gap: 100px;
+    gap: 30%;
 }
 
 /* Botão de sortear título */
 .button-draw {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +183,8 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    box-sizing: border-box;
+    margin-right: 20px;
 }
 
 .button-draw:hover {
@@ -183,4 +194,76 @@ ul {
 .imagem_x {
     width: 34px;
     height: 35px;
+}
+
+@media (max-width: 454px) {
+
+    body {
+        box-sizing: border-box;
+        background-image: url("../assets/herman.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .result-list {
+        box-sizing: border-box;
+        margin-top: 0px;
+        color: #05DF05;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: auto;
+    }
+
+    .input-section {
+        box-sizing: border-box;
+        background-color: #000957;
+        background-position: auto;
+        border: 1px solid #000;
+        border-radius: 64px 64px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: auto;
+    }
+
+    .container-resultados {
+        box-sizing: border-box;
+        justify-content: space-between;
+        display: flex;
+        gap: 50px;
+        width: auto;
+        padding: 0%;
+    }
+
+    .main-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .button-container {
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 0%;
+        padding: 0%;
+    }
+
+    .button-draw {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2%;
+        color: var(--color-white);
+        background-color: var(--color-button);
+        font-size: 1rem;
+    }
 }
