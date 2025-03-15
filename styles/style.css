@@ -17,7 +17,7 @@
 
 body {
     height: 100vh;
-    background-image: url("/assets/herman.png");
+    background-image: url("./assets/herman.png");
     display: flex;
     justify-content: center;
     align-items: center;
