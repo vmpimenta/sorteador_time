@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main-content {
@@ -215,6 +216,23 @@ ul {
     height: 35px;
 }
 
+.rodape {
+    padding: 20px;
+    text-align: center;
+    color: var(--color-button);
+    background-color: #000957;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+
+}
+
 @media (max-width: 454px) {
 
     .result-list {
@@ -326,5 +344,19 @@ ul {
         margin: 20px 0;
         text-align: center;
         word-break: break-word;
+    }
+
+    .rodape {
+        padding: 20px;
+        text-align: center;
+        color: var(--color-button);
+        background-color: #000957;
+        font-family: "Inter", serif;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
     }
 }
