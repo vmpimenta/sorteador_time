@@ -19,6 +19,12 @@ body {
     box-sizing: border-box;
     height: 100vh;
     background-image: url("../assets/herman.png");
+    background-repeat: repeat;
+    /* mantém a repetição */
+    background-position: center top;
+    /* alinha horizontalmente no centro */
+    background-size: auto;
+    /* teste com 'contain' ou 'cover' se quiser outro efeito */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,14 +216,6 @@ ul {
 }
 
 @media (max-width: 454px) {
-
-    body {
-        box-sizing: border-box;
-        background-image: url("../assets/herman.png");
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .result-list {
         display: flex;
