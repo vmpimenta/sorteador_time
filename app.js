@@ -13,7 +13,7 @@ function adicionarJogador() {
     }
 }
 // PERMITIR COM O ENTER ENVIAR O NOME DO JOGADOR
-document.getElementById("jogador").addEventListener("keydown", function(e) {
+document.getElementById("jogador").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         adicionarJogador();
     }
@@ -53,13 +53,24 @@ function limparLista() {
 function sortearTime() {
     if (listaNomes.length < 2) {
         alert("Adicione pelo menos 2 jogadores! ");
-        limparLista();
     } else {
         let ulAzul = document.getElementById("timeAzul"); // Acessando o elmento pelo id;
-        ulAzul.innerHTML = "TIME AZUL";
+        ulAzul.innerHTML = "";
 
         let ulLaranja = document.getElementById("timeVermelho"); // Acessando o elmento pelo id;
-        ulLaranja.innerHTML = "TIME LARANJA";
+        ulLaranja.innerHTML = ""; //'<li style="color: black; font-weight: bold;">TIME LARANJA</li>' opçao para alterar ai mesmo
+
+        // Adiciona o título ao time azul (dentro de um <li>)
+        let tituloAzul = document.createElement("li");
+        tituloAzul.textContent = "TIME AZUL";
+        tituloAzul.classList.add("titulo-time"); // classe para estilizar separado
+        ulAzul.appendChild(tituloAzul);
+
+        // Adiciona o título ao time laranja (dentro de um <li>)
+        let tituloLaranja = document.createElement("li");
+        tituloLaranja.textContent = "TIME LARANJA";
+        tituloLaranja.classList.add("titulo-time");
+        ulLaranja.appendChild(tituloLaranja);
 
         let listaOriginal = [...listaNomes];
         let totalJogadores = listaOriginal.length;
