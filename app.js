@@ -37,16 +37,16 @@ function limparNome() {
 
 function limparLista() {
     let timeAzul = document.getElementById("timeAzul").innerHTML;
-    let timeVermelho = document.getElementById("timeVermelho").innerHTML;
+    let timeLaranja = document.getElementById("timeLaranja").innerHTML;
 
-    if (listaNomes.length === 0 && timeAzul === "" && timeVermelho === "") {
+    if (listaNomes.length === 0 && timeAzul === "" && timeLaranja === "") {
         alert("A lista já está vazia! ");
     } else {
         listaNomes = [];
         listaOriginal = [];
         document.getElementById("listaNomes").innerHTML = "";
         document.getElementById("timeAzul").innerHTML = "";
-        document.getElementById("timeVermelho").innerHTML = "";
+        document.getElementById("timeLaranja").innerHTML = "";
     }
 }
 
@@ -57,7 +57,7 @@ function sortearTime() {
         let ulAzul = document.getElementById("timeAzul"); // Acessando o elmento pelo id;
         ulAzul.innerHTML = "";
 
-        let ulLaranja = document.getElementById("timeVermelho"); // Acessando o elmento pelo id;
+        let ulLaranja = document.getElementById("timeLaranja"); // Acessando o elmento pelo id;
         ulLaranja.innerHTML = ""; //'<li style="color: black; font-weight: bold;">TIME LARANJA</li>' opçao para alterar ai mesmo
 
         // Adiciona o título ao time azul (dentro de um <li>)

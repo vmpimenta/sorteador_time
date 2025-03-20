@@ -229,8 +229,6 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 2%;
-
-
 }
 
 @media (max-width: 454px) {
@@ -267,6 +265,7 @@ ul {
         gap: 5%;
         width: auto;
         padding: 0%;
+        flex-wrap: wrap;
     }
 
     .main-content {
@@ -345,7 +344,7 @@ ul {
         text-align: center;
         word-break: break-word;
     }
-
+    
     .rodape {
         padding: 20px;
         text-align: center;
@@ -357,6 +356,8 @@ ul {
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 10%;
     }
 }
+    
